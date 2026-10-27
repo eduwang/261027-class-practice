@@ -1,13 +1,193 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>261027-class-practice</title>
+    <meta
+      name="description"
+      content="디자인과 기술 사이에서 새로운 경험을 만드는 크리에이터의 포트폴리오입니다."
+    />
+    <title>YOUR NAME — Portfolio</title>
   </head>
   <body>
-    <div id="app"></div>
+    <a class="skip-link" href="#main">본문 바로가기</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="첫 화면으로 이동">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>YOUR NAME</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">메뉴 열기</span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero section-shell">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow"><span></span>Hello, I’m</p>
+          <h1>
+            <span>반갑습니다,</span>
+            <strong>YOUR NAME</strong>
+          </h1>
+          <p class="hero-intro">
+            디자인과 기술 사이에서<br />
+            오래 기억되는 경험을 만듭니다.
+          </p>
+          <a class="round-link" href="#work">
+            작업 보기
+            <span aria-hidden="true">↘</span>
+          </a>
+        </div>
+
+        <div class="hero-art" aria-hidden="true" data-reveal>
+          <span class="art-grid"></span>
+          <span class="art-sun"></span>
+          <span class="art-arch"></span>
+          <span class="art-capsule"></span>
+          <span class="art-star">✦</span>
+          <span class="art-line"></span>
+          <span class="art-dot art-dot-one"></span>
+          <span class="art-dot art-dot-two"></span>
+        </div>
+
+        <p class="hero-note">Based in Seoul · Available for good ideas</p>
+      </section>
+
+      <section id="about" class="about section-shell">
+        <div class="section-label" data-reveal>
+          <span>01</span>
+          <p>About me</p>
+        </div>
+
+        <div class="about-content" data-reveal>
+          <p class="statement">
+            좋은 디자인은 <em>기능적</em>이면서도,<br />
+            작은 <em>즐거움</em>을 남긴다고 믿습니다.
+          </p>
+
+          <div class="about-details">
+            <p>
+              안녕하세요. 저는 <strong>직업 또는 역할</strong>로 일하고 있는 YOUR NAME입니다.
+              이곳에는 나의 관점과 강점, 좋아하는 일을 두세 문장으로 소개해 보세요.
+            </p>
+            <ul class="interest-list" aria-label="관심 분야">
+              <li><span>01</span>Brand identity</li>
+              <li><span>02</span>Digital experience</li>
+              <li><span>03</span>Creative direction</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="work section-shell">
+        <div class="section-heading" data-reveal>
+          <div class="section-label">
+            <span>02</span>
+            <p>Selected work</p>
+          </div>
+          <h2>제가 만든<br /><em>몇 가지</em></h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card project-card-coral" data-reveal>
+            <div class="project-visual visual-one" aria-hidden="true">
+              <span class="visual-arch"></span>
+              <span class="visual-circle"></span>
+              <span class="visual-word">A</span>
+            </div>
+            <div class="project-info">
+              <p class="project-number">Project 01</p>
+              <h3>프로젝트 이름</h3>
+              <p>Brand identity · 2026</p>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card-blue" data-reveal>
+            <div class="project-visual visual-two" aria-hidden="true">
+              <span class="visual-orbit"></span>
+              <span class="visual-square"></span>
+              <span class="visual-word">B</span>
+            </div>
+            <div class="project-info">
+              <p class="project-number">Project 02</p>
+              <h3>두 번째 작업</h3>
+              <p>Web design · 2026</p>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card-gold" data-reveal>
+            <div class="project-visual visual-three" aria-hidden="true">
+              <span class="visual-flower">✣</span>
+              <span class="visual-pill"></span>
+              <span class="visual-word">C</span>
+            </div>
+            <div class="project-info">
+              <p class="project-number">Project 03</p>
+              <h3>또 다른 이야기</h3>
+              <p>Editorial · 2025</p>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="values section-shell">
+        <div class="section-label" data-reveal>
+          <span>03</span>
+          <p>My values</p>
+        </div>
+        <div class="values-grid" data-reveal>
+          <p class="values-lead">호기심을 잃지 않고,<br />본질은 단단하게.</p>
+          <div class="value-item">
+            <span>01</span>
+            <h3>Simple</h3>
+            <p>복잡한 문제를 명확한 언어와 형태로 풀어냅니다.</p>
+          </div>
+          <div class="value-item">
+            <span>02</span>
+            <h3>Warm</h3>
+            <p>사람을 먼저 생각하는 다정한 경험을 지향합니다.</p>
+          </div>
+          <div class="value-item">
+            <span>03</span>
+            <h3>Playful</h3>
+            <p>예상 밖의 작은 재미를 발견하고 더합니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact-shape contact-shape-left" aria-hidden="true"></div>
+        <div class="contact-copy section-shell" data-reveal>
+          <p>좋은 아이디어가 있으신가요?</p>
+          <h2>함께 멋진 것을<br /><em>만들어 봐요.</em></h2>
+          <a href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="contact-shape contact-shape-right" aria-hidden="true"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="current-year"></span> YOUR NAME</p>
+      <div>
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
